@@ -19,4 +19,4 @@ jobs:
 
     - name: Copy files to the S3 bucket
       run: |
-        aws s3 sync ./Upload s3://testbucketgithub
+        aws s3 sync ./Upload s3://${{ secrets.AWS_BUCKET_NAME }}
